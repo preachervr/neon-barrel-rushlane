@@ -293,9 +293,9 @@
           </div>
         </div>
         <div class="flex flex-col gap-4 items-start md:items-end">
-          <p class="font-space font-bold text-white uppercase text-right">Get on the grid</p>
-          <div class="h-14 flex items-center justify-end">
-            <button id="footerDownloadBtn" class="group relative flex items-center justify-center bg-lime-400 hover:bg-lime-300 text-midnightcharcoal-950 font-space font-bold italic h-14 w-56 rounded-lg transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] shadow-[0_0_20px_rgba(163,230,53,0.4)] hover:shadow-[0_0_30px_rgba(163,230,53,0.6)] active:scale-95 cursor-pointer overflow-hidden">
+          <p class="font-space font-bold text-white uppercase self-center">Get on the grid</p>
+          <div class="flex flex-col gap-4 items-center justify-end">
+            <button id="footerDownloadBtn" class="self-start group relative flex items-center justify-center bg-lime-400 hover:bg-lime-300 text-midnightcharcoal-950 font-space font-bold italic h-14 w-56 rounded-lg transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] shadow-[0_0_20px_rgba(163,230,53,0.4)] hover:shadow-[0_0_30px_rgba(163,230,53,0.6)] active:scale-95 cursor-pointer overflow-hidden">
               <span class="btn-content flex items-center gap-2 transition-opacity duration-300">
                 <span>INSTALL APP</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
@@ -308,6 +308,18 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
               </svg>
             </button>
+            <form action="https://formspree.io/f/YOUR_ID" method="POST" class="flex flex-col md:flex-row gap-4 w-full max-w-md">
+              <input 
+                type="email" 
+                name="email" 
+                placeholder="Enter your email" 
+                class="flex-1 bg-zinc-900 border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-lime-400 transition-colors"
+                required
+              >
+              <button type="submit" class="bg-lime-400 hover:bg-lime-500 text-midnightcharcoal-950 font-bold px-6 py-3 rounded-lg transition-all">
+                Notify Me
+              </button>
+            </form>
           </div>
           <p class="text-xs text-zinc-500 font-inter">v1.4.2 • iOS & Android</p>
         </div>
