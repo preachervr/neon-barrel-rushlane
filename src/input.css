@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-space: "Space Grotesk", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-midnightcharcoal-50: oklch(97.9% 0.002 247.8);
+  --color-midnightcharcoal-100: oklch(95.2% 0.006 223.5);
+  --color-midnightcharcoal-200: oklch(88.6% 0.010 228.9);
+  --color-midnightcharcoal-300: oklch(76.3% 0.016 235.5);
+  --color-midnightcharcoal-400: oklch(61.6% 0.020 238.0);
+  --color-midnightcharcoal-500: oklch(46.7% 0.024 239.1);
+  --color-midnightcharcoal-600: oklch(40.2% 0.022 240.5);
+  --color-midnightcharcoal-700: oklch(33.5% 0.016 237.2);
+  --color-midnightcharcoal-800: oklch(27.3% 0.011 237.1);
+  --color-midnightcharcoal-900: oklch(21.9% 0.007 229.2);
+  --color-midnightcharcoal-950: oklch(15.8% 0.003 248.0);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) ; }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
